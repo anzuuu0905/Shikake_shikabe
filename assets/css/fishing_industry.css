@@ -1,0 +1,47 @@
+.freshness_hygiene {
+  margin-bottom: 20%;
+}
+.freshness_hygiene ul li img {
+  margin-bottom: 1rem;
+}
+
+.fish_market_shikabe {
+  margin-bottom: 20%;
+}
+.fish_market_shikabe ul li img {
+  margin-bottom: 1rem;
+}
+.fish_market_shikabe .imgBlk {
+  margin-bottom: 1rem;
+}
+.fish_market_shikabe .txt02 {
+  background: #F2F2F2;
+  padding: 5%;
+  margin-top: 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .freshness_hygiene {
+    margin-bottom: 6%;
+  }
+  .freshness_hygiene .is-flex.gutters.is-offset {
+    margin-left: -5%;
+  }
+  .freshness_hygiene .is-flex.gutters.is-offset > .col {
+    margin-left: 5%;
+  }
+  .freshness_hygiene .is-flex.gutters > .is-pc6 {
+    width: calc(8.333333% * 6 - 5%);
+  }
+
+  .fish_market_shikabe {
+    margin-bottom: 8%;
+  }
+  .fish_market_shikabe .imgBlk, .fish_market_shikabe .txtBlk {
+    margin-bottom: 0;
+  }
+  .fish_market_shikabe .txt02 {
+    padding: 3%;
+    margin-top: 5%;
+  }
+}

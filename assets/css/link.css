@@ -1,0 +1,35 @@
+.secondaryInner .txt {
+  font-size: 4.8vw;
+}
+.secondaryInner .txt a {
+  color: #4388D9;
+  text-decoration: underline;
+}
+.secondaryInner ul.note {
+  margin-left: 2rem;
+}
+.secondaryInner ul.note li {
+  font-size: 4.8vw;
+  text-indent: -2em;
+  margin-left: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .secondaryInner .txt {
+    font-size: 1.40625vw;
+  }
+  .secondaryInner ul.note {
+    margin-left: 4rem;
+  }
+  .secondaryInner ul.note li {
+    font-size: 1.40625vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .secondaryInner .txt {
+    font-size: 18px;
+  }
+  .secondaryInner ul.note li {
+    font-size: 18px;
+  }
+}

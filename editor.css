@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+h1,h2{
+  font-weight: bold;
+  border-left: solid 4px #4388D9;
+  padding-left: 1rem;
+}
+h3{
+  font-weight: bold;
+}

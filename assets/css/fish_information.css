@@ -1,0 +1,726 @@
+/*=================================
+  fish_species
+=================================*/
+.infoBlk .txtBlk .box {
+  background: #FDF4CD;
+  margin-top: 10%;
+  padding: 5%;
+}
+
+.acoBlk {
+  width: 90%;
+  max-width: 680px;
+  margin: 10% auto 0;
+}
+.acoBlk .toggle {
+  display: none;
+}
+.acoBlk .option {
+  position: relative;
+  margin-bottom: 1em;
+}
+.acoBlk .title,
+.acoBlk .content {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.3s;
+}
+.acoBlk .title {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 0;
+  font-size: 5.3333333333vw;
+  font-weight: bold;
+  text-align: center;
+  background: #F2902A;
+  color: #FFF;
+  cursor: pointer;
+  transition: .3s;
+}
+.acoBlk .title:hover {
+  opacity: .8;
+}
+.acoBlk .title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 1.25em;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-top: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+  transform: translateY(-50%) rotate(135deg);
+}
+.acoBlk .content {
+  max-height: 0;
+  overflow: hidden;
+}
+.acoBlk .content .wrap {
+  width: 100%;
+  box-sizing: border-box;
+}
+.acoBlk .toggle:checked + .title + .content {
+  max-height: 600px;
+  transition: all 1.0s;
+}
+.acoBlk .toggle:checked + .title::before {
+  transform: rotate(-45deg) !important;
+}
+
+.other {
+  margin-bottom: 20%;
+}
+.other .infoTable thead th {
+  background: #F2F2F2;
+}
+
+@media screen and (min-width: 768px) {
+  .infoBlk .txtBlk .box {
+    margin-top: 5%;
+    padding: 3%;
+  }
+
+  .acoBlk {
+    margin: 5% auto 0;
+  }
+  .acoBlk .title {
+    font-size: 1.40625vw;
+  }
+  .acoBlk .content .wrap {
+    padding: 4% 5%;
+    background: #EDEDED;
+    border: solid 1px #707070;
+  }
+
+  .other {
+    margin-bottom: 8%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .acoBlk .title {
+    font-size: 18px;
+  }
+
+  .other p {
+    font-size: 18px;
+  }
+}
+/*=================================
+  fishing_calendar
+=================================*/
+.calendarArea {
+  margin-bottom: 20%;
+}
+.calendarArea .note {
+  margin-bottom: 3rem;
+}
+.calendarArea .note p span {
+  display: inline-block;
+  background: #8CBEE8;
+  width: 65px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 1rem;
+  margin-top: -5px;
+}
+.calendarArea .note p:nth-child(2) span {
+  background: #4388D9;
+}
+
+.detailArea {
+  margin-bottom: 20%;
+}
+.detailArea .secondaryBlkTtl:after {
+  content: none;
+}
+.detailArea .wrap ul li {
+  margin-bottom: 12%;
+}
+.detailArea .wrap ul li h4 {
+  font-size: 4.8vw;
+}
+.detailArea .wrap ul li h4 a {
+  color: #4388D9;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.detailArea .wrap ul li table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.detailArea .wrap ul li table th {
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 768px) {
+  .calendarArea {
+    margin-bottom: 10%;
+  }
+
+  .detailArea {
+    margin-bottom: 8%;
+  }
+  .detailArea .wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .detailArea .wrap ul {
+    width: 48%;
+  }
+  .detailArea .wrap ul li {
+    margin-bottom: 3%;
+    min-height: 14vw;
+  }
+  .detailArea .wrap ul li.is-height {
+    min-height: 26vw;
+  }
+  .detailArea .wrap ul li h4 {
+    font-size: 1.5625vw;
+  }
+  .detailArea .wrap ul li table th, .detailArea .wrap ul li table td {
+    font-size: 1.40625vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .detailArea .wrap ul li h4 {
+    font-size: 20px;
+  }
+  .detailArea .wrap ul li table th, .detailArea .wrap ul li table td {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .calendarBlk {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+  }
+  .calendarBlk img {
+    width: 1200px;
+  }
+  .calendarBlk::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .calendarBlk::-webkit-scrollbar-track {
+    background: #EDEDED;
+  }
+  .calendarBlk::-webkit-scrollbar-thumb {
+    background: #4388D9;
+    border-radius: 5px;
+  }
+}
+/*=================================
+  major_fish_species
+=================================*/
+.blank {
+  color: #2680EB;
+  text-decoration: underline;
+  position: relative;
+}
+.blank:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 0px;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: .5rem;
+}
+.blank:after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: url("../img/common/icon-blank.svg") no-repeat center center;
+  background-size: contain;
+  margin-left: .5rem;
+}
+
+.cateBlk {
+  margin-bottom: 20%;
+  overflow: hidden;
+}
+.cateBlk .detail {
+  margin-bottom: 8%;
+}
+.cateBlk .detail img {
+  margin-bottom: 8%;
+}
+.cateBlk .detail h3 {
+  font-weight: bold;
+  font-size: 6.4vw;
+  position: relative;
+  margin-bottom: 8%;
+}
+.cateBlk .detail h3 span {
+  display: inline-block;
+  background: #FFF;
+  padding-right: 1rem;
+  position: relative;
+  z-index: 1;
+}
+.cateBlk .detail h3:after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 0;
+}
+.cateBlk .detail .txtArea {
+  padding: 0 5%;
+  margin-bottom: 8%;
+}
+.cateBlk .detail .txtArea p {
+  text-align: justify;
+}
+.cateBlk .detail .linksbox {
+  width: 90%;
+  margin: 0 auto;
+  background: #FDF4CD;
+  box-sizing: border-box;
+  padding: 5%;
+}
+.cateBlk .detail .linksbox h4 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 5.3333333333vw;
+}
+.cateBlk .detail .linksbox p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.cateBlk .detail .linksbox .box:first-of-type {
+  margin-bottom: 2rem;
+}
+.cateBlk .detail .linksbox .box h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 4.8vw;
+}
+.cateBlk .imgArea {
+  margin-bottom: 8%;
+}
+.cateBlk .imgArea img:first-of-type {
+  margin-bottom: 8%;
+}
+
+.tagBlk {
+  box-sizing: border-box;
+  background: #EDEDED;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5%;
+}
+.tagBlk ul {
+  display: flex;
+  justify-content: center;
+  margin-right: -1rem;
+}
+.tagBlk ul li {
+  margin-right: 1rem;
+}
+.tagBlk ul a {
+  color: #2680EB;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .cateBlk {
+    margin-bottom: 10%;
+  }
+  .cateBlk .wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cateBlk:nth-of-type(2n) {
+    overflow: hidden;
+  }
+  .cateBlk:nth-of-type(2n) .wrap {
+    flex-direction: row-reverse;
+  }
+  .cateBlk:nth-of-type(2n) .detail {
+    margin-right: 0;
+    margin-left: 2.67%;
+  }
+  .cateBlk:nth-of-type(2n) .detail .txtArea {
+    padding: 0 8% 0 0;
+  }
+  .cateBlk:nth-of-type(2n) .detail .linksbox {
+    margin: 0;
+  }
+  .cateBlk .detail {
+    width: 67%;
+    margin-bottom: 0;
+    margin-right: 2.67%;
+  }
+  .cateBlk .detail img {
+    margin-bottom: 2%;
+  }
+  .cateBlk .detail h3 {
+    font-size: 2.5vw;
+    margin-bottom: 2%;
+  }
+  .cateBlk .detail h3 span {
+    padding-left: 0;
+  }
+  .cateBlk .detail .txtArea {
+    padding: 0 0 0 8%;
+    margin-bottom: 5%;
+  }
+  .cateBlk .detail .linksbox {
+    width: 92%;
+    margin: 0 0 0 auto;
+    padding: 3%;
+  }
+  .cateBlk .detail .linksbox .wrap{
+    display: block;
+  }
+  .cateBlk .detail .linksbox h4 {
+    font-size: 1.71875vw;
+  }
+  .cateBlk .detail .linksbox .box {
+    /* width: 50%; */
+  }
+  .cateBlk .detail .linksbox .box:first-of-type {
+    margin-bottom: 0;
+  }
+  .cateBlk .detail .linksbox .box h5 {
+    text-align: center;
+    font-size: 1.40625vw;
+  }
+  .cateBlk .detail .linksbox .box .links {
+    display: flex;
+    justify-content: center;
+    margin-left: -2rem;
+  }
+  .cateBlk .detail .linksbox .box .links ul {
+    margin-left: 2rem;
+  }
+  .cateBlk .detail .linksbox .box .links ul li {
+    font-size: 1.40625vw;
+  }
+  .cateBlk .detail .linksbox .box.single {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .cateBlk .detail .linksbox .box.single:nth-child(2) {
+    margin-top: 3rem;
+  }
+  .cateBlk .detail .linksbox .box.single + .cateBlk .detail .linksbox .box.single{
+    margin-top: 2rem;
+  }
+  .cateBlk .detail .linksbox .box.single .links {
+    display: block;
+    margin-left: 0;
+  }
+  .cateBlk .detail .linksbox .box.single .links ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 0rem;
+    /* margin-right: -1rem; */
+    flex-wrap: wrap;
+    max-width: 70rem;
+    margin: auto;
+  }
+  .cateBlk .detail .linksbox .box.single .links ul li {
+    margin-left: 1.5rem;
+    width: 31%;
+    margin-left: 0;
+  }
+  .cateBlk .detail .linksbox .box.single .links ul li:nth-child(3),
+  .cateBlk .detail .linksbox .box.single .links ul li:nth-child(4){
+    width: 19%;
+  }
+  .cateBlk .detail .linksbox .box.single .links ul li:nth-child(7){
+    width: 38%;
+  }
+
+  .cateBlk .imgArea {
+    width: 32%;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .cateBlk .imgArea img:first-of-type {
+    margin-bottom: 8%;
+  }
+
+  .tagBlk {
+    display: flex;
+    align-items: center;
+    padding: 1% 3%;
+    margin-top: 5%;
+  }
+  .tagBlk p {
+    font-size: 1.5625vw;
+  }
+  .tagBlk ul {
+    padding-left: 10%;
+  }
+  .tagBlk ul li {
+    font-size: 1.40625vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .cateBlk .detail h3 {
+    font-size: 32px;
+  }
+  .cateBlk .detail .linksbox h4 {
+    font-size: 22px;
+  }
+  .cateBlk .detail .linksbox .box h5 {
+    font-size: 18px;
+  }
+  .cateBlk .detail .linksbox .box .links ul li {
+    font-size: 18px;
+  }
+
+  .tagBlk p {
+    font-size: 20px;
+  }
+  .tagBlk ul li {
+    font-size: 18px;
+  }
+}
+/*=================================
+  recipe_restaurant
+=================================*/
+.pageNav {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 14%;
+}
+.pageNav li {
+  transition: .3s;
+  position: relative;
+  font-size: 4.2666666667vw;
+  text-align: center;
+}
+.pageNav li:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 0px;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  vertical-align: middle;
+  position: absolute;
+  bottom: -.55em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: .3s;
+}
+.pageNav li a {
+  padding: 0 1em;
+  display: inline-block;
+  border-right: dashed 1px #211815;
+}
+.pageNav li:hover {
+  opacity: .8;
+}
+.pageNav li:hover:after {
+  bottom: -.8em;
+}
+.pageNav li:first-child a {
+  border-left: dashed 1px #211815;
+}
+
+.recipe {
+  margin-bottom: 20%;
+}
+.recipe h4 {
+  font-weight: bold;
+  font-size: 5.3333333333vw;
+  margin-bottom: 1rem;
+}
+.recipe .wrap .box {
+  margin-bottom: 10%;
+}
+.recipe .wrap .box h5 {
+  font-weight: bold;
+  border-bottom: solid 1px #000;
+  line-height: 2.0;
+  font-size: 4.2666666667vw;
+  margin-bottom: 1rem;
+}
+.recipe .wrap .box table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.recipe .wrap .box table tr:first-child th, .recipe .wrap .box table tr:first-child td {
+  padding-top: 0;
+}
+.recipe .wrap .box table th, .recipe .wrap .box table td {
+  font-size: 4.8vw;
+  padding-top: 1rem;
+}
+.recipe .wrap .box table th {
+  font-weight: normal;
+  text-align: left;
+  border-bottom: dashed 1px #000;
+}
+.recipe .wrap .box table td {
+  text-align: right;
+  border-bottom: dashed 1px #000;
+}
+.recipe .wrap .box ul {
+  margin-left: 1em;
+}
+.recipe .wrap .box ul li {
+  text-indent: -1em;
+  font-size: 4.8vw;
+}
+.recipe .wrap .box p {
+  font-size: 4.8vw;
+}
+.recipe .tagBlk {
+  margin-top: 0;
+}
+
+.recommend {
+  margin-bottom: 20%;
+}
+.recommend h3 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 4.8vw;
+  margin-bottom: 2rem;
+}
+.recommend .btn-more {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.infoSec .intro .txt {
+  margin-bottom: 3rem;
+}
+.infoSec .intro .txt b {
+  display: block;
+  font-size: 5.3333333333vw;
+  margin: 2rem 0 1rem;
+}
+.infoSec .intro .tagBlk {
+  width: 90%;
+  margin: 0 auto;
+}
+.infoSec .intro .tagBlk p {
+  width: auto;
+  margin: 0;
+}
+.infoSec .txtArea p:nth-of-type(1) a {
+  color: #4388D9;
+  text-decoration: underline;
+}
+.infoSec .txtArea .blank {
+  text-align: right;
+}
+.infoSec .txtArea .blank a {
+  color: #4388D9;
+}
+
+@media screen and (min-width: 768px) {
+  .pageNav {
+    margin-bottom: 7%;
+  }
+  .pageNav li {
+    font-size: 1.40625vw;
+  }
+  .pageNav li a {
+    line-height: 1.0;
+  }
+
+  .recipe {
+    margin-bottom: 10%;
+  }
+  .recipe h4 {
+    font-size: 2.1875vw;
+  }
+  .recipe .wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recipe .wrap .box {
+    width: 47%;
+    margin-bottom: 3%;
+  }
+  .recipe .wrap .box h5 {
+    font-size: 1.5625vw;
+  }
+  .recipe .wrap .box table th, .recipe .wrap .box table td {
+    font-size: 1.40625vw;
+  }
+  .recipe .wrap .box ul li {
+    font-size: 1.40625vw;
+  }
+  .recipe .wrap .box p {
+    font-size: 1.40625vw;
+  }
+
+  .recommend {
+    margin-bottom: 10%;
+  }
+  .recommend h3 {
+    font-size: 1.71875vw;
+  }
+  .recommend .btn-more {
+    max-width: 250px;
+  }
+
+  .infoSec .intro .txt b {
+    font-size: 2.34375vw;
+  }
+  .infoSec .intro .tagBlk {
+    width: 92%;
+    margin: 4rem 0 0 auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .pageNav li {
+    font-size: 18px;
+  }
+
+  .recipe h4 {
+    font-size: 28px;
+  }
+  .recipe .wrap .box h5 {
+    font-size: 20px;
+  }
+  .recipe .wrap .box table th, .recipe .wrap .box table td {
+    font-size: 18px;
+  }
+  .recipe .wrap .box ul li {
+    font-size: 18px;
+  }
+  .recipe .wrap .box p {
+    font-size: 18px;
+  }
+
+  .infoSec .intro .txt b {
+    font-size: 30px;
+  }
+}

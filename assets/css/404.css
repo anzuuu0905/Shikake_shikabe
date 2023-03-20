@@ -1,0 +1,35 @@
+.notFound p {
+  margin-bottom: 16%;
+}
+
+.bnrArea {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+.bnrArea small {
+  display: block;
+  padding: 0 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .notFound p {
+    text-align: center;
+    margin-bottom: 6%;
+  }
+
+  .bnrArea {
+    width: 46%;
+    max-width: 518px;
+    margin: 8% auto;
+  }
+  .bnrArea img {
+    transition: .3s;
+  }
+  .bnrArea img:hover {
+    opacity: .8;
+  }
+  .bnrArea small {
+    padding: 0;
+    text-align: center;
+  }
+}

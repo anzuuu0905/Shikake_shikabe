@@ -1,0 +1,427 @@
+/*=================================
+  top
+=================================*/
+.cateTxtLink_wrap {
+  padding-top: 13%;
+}
+
+.cateTxtLink_blk {
+  background: #F2902A;
+  border-radius: 10px;
+}
+.cateTxtLink_blk p {
+  color: #FFF;
+}
+.cateTxtLink_blk ul li {
+  text-align: center;
+}
+.cateTxtLink_blk ul li a {
+  color: #FFF;
+}
+.cateTxtLink_blk ul li a:before {
+  border-top: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  .cateTxtLink_wrap {
+    max-width: 760px;
+    padding-top: 10%;
+  }
+}
+/*=================================
+  fishermen
+=================================*/
+.fishermenList {
+  padding-bottom: 18%;
+}
+.fishermenList ul {
+  margin-bottom: -18%;
+}
+.fishermenList ul li {
+  margin-bottom: 18%;
+}
+.fishermenList ul li h3 {
+  width: 90%;
+  margin: 0 auto 2rem;
+  font-weight: bold;
+  font-size: 3.7333333333vw;
+  line-height: 1.6;
+}
+.fishermenList ul li h3 span {
+  font-size: 2em;
+}
+.fishermenList ul li h3 span:nth-of-type(2) {
+  font-size: 2em;
+}
+.fishermenList ul li h3 small {
+  display: block;
+  font-weight: normal;
+}
+.fishermenList ul li .imgArea {
+  margin-bottom: 2rem;
+}
+.fishermenList ul li .txtArea {
+  width: 90%;
+  margin: 0 auto;
+}
+.fishermenList ul li .txtArea .txt {
+  text-align: justify;
+}
+.fishermenList ul li .txtArea .txt b {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+  .fishermenList {
+    padding-bottom: 10%;
+  }
+  .fishermenList ul {
+    margin-bottom: -9%;
+  }
+  .fishermenList ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9%;
+  }
+  .fishermenList ul li h3 {
+    width: auto;
+    font-size: 1.5625vw;
+  }
+  .fishermenList ul li .imgArea {
+    margin-bottom: 0;
+    width: 48%;
+  }
+  .fishermenList ul li .txtArea {
+    width: 48%;
+    box-sizing: border-box;
+    margin: 0;
+    padding-right: 5%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .fishermenList ul li h3 {
+    font-size: 20px;
+  }
+}
+/*=================================
+  how_to_become_a_fisherman
+=================================*/
+.fishermanLinks {
+  margin-bottom: 14%;
+}
+.fishermanLinks ul {
+  display: flex;
+  border-left: solid 1px #000;
+}
+.fishermanLinks ul li {
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  border-top: solid 1px #000;
+  border-bottom: solid 1px #000;
+  border-right: solid 1px #000;
+  display: flex;
+  align-items: center;
+}
+.fishermanLinks ul li a {
+  width: 100%;
+  height: 100%;
+  padding: 3% 0;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 4vw;
+  transition: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fishermanLinks ul li a:hover {
+  color: #FFF;
+  background: #4388D9;
+}
+.fishermanLinks ul li.current a {
+  color: #FFF;
+  background: #4388D9;
+}
+
+.fishermanNav ul {
+  margin-bottom: -14%;
+}
+.fishermanNav ul li {
+  margin-bottom: 14%;
+  transition: .3s;
+}
+.fishermanNav ul li:hover {
+  opacity: .8;
+}
+.fishermanNav ul li img {
+  margin-bottom: 1rem;
+}
+.fishermanNav ul li p {
+  font-weight: bold;
+  font-size: 5.3333333333vw;
+}
+.fishermanNav ul li p:before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+  border-radius: 0px;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-right: 1rem;
+  margin-top: -5px;
+}
+
+@media screen and (min-width: 768px) {
+  .fishermanLinks {
+    margin-bottom: 3%;
+  }
+  .fishermanLinks ul li a {
+    font-size: 1.40625vw;
+  }
+
+  .fishermanNav ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  .fishermanNav ul li {
+    width: calc(100% / 3 - 3%);
+    margin-bottom: 0;
+  }
+  .fishermanNav ul li p {
+    font-size: 1.40625vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .fishermanNav ul li p {
+    font-size: 18px;
+  }
+}
+/*=================================
+  be_a_fisherman
+=================================*/
+.summary, .flow {
+  margin-bottom: 20%;
+}
+.summary ul li, .flow ul li {
+  margin-bottom: 15%;
+}
+.summary ul li h4, .flow ul li h4 {
+  font-weight: bold;
+  font-size: 5.3333333333vw;
+}
+.summary ul li h4 span, .flow ul li h4 span {
+  font-size: 1.4em;
+}
+.summary ul li p, .flow ul li p {
+  text-align: justify;
+}
+
+.flow ul li h4 span {
+  font-size: 1.0em;
+}
+
+.unionContact {
+  margin-bottom: 10%;
+}
+
+.group {
+  margin-bottom: 20%;
+}
+
+.unionContact .secondaryInner, .group .secondaryInner {
+  padding-bottom: 0;
+}
+.unionContact .txt, .group .txt {
+  margin-bottom: 4rem;
+}
+.unionContact .address, .group .address {
+  margin-bottom: 15%;
+}
+.unionContact .address h4, .group .address h4 {
+  font-size: 7.4666666667vw;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.blank {
+  text-align: right;
+}
+.blank.align-left {
+  text-align: left;
+}
+.blank a {
+  color: #4388D9;
+  text-decoration: underline;
+  transition: .3s;
+}
+.blank a:hover {
+  opacity: .8;
+}
+.blank a:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 0px;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  vertical-align: middle;
+  margin-top: -2px;
+  margin-right: .5rem;
+}
+.blank a:after {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url("../img/common/icon-blank.svg") no-repeat center center;
+  background-size: contain;
+  margin-left: .5rem;
+}
+
+.other {
+  margin-bottom: 20%;
+}
+.other .wrap .box {
+  margin-bottom: 20%;
+}
+.other .wrap .box:last-of-type {
+  margin-bottom: 0;
+}
+.other .wrap .box img {
+  margin-bottom: 1rem;
+}
+.other .wrap .box h3 {
+  font-size: 6.4vw;
+  font-weight: bold;
+  border-bottom: solid 2px #000;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  line-height: 1.4;
+}
+.other .wrap .box ul {
+  margin-bottom: 1em;
+}
+.other .wrap .box ul li {
+  margin-left: 1em;
+  text-indent: -1em;
+}
+.other .wrap .box p b {
+  font-size: 1.2em;
+}
+.other .wrap .box p span {
+  font-weight: bold;
+}
+.other .wrap .box .btnArea {
+  margin-top: 4rem;
+  max-width: 400px;
+}
+
+.infoSec .intro p b {
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 768px) {
+  .summary, .flow {
+    margin-bottom: 10%;
+  }
+  .summary ul, .flow ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -8%;
+  }
+  .summary ul li, .flow ul li {
+    width: 47%;
+    margin-bottom: 8%;
+  }
+  .summary ul li h4, .flow ul li h4 {
+    font-size: 1.71875vw;
+  }
+  .summary ul li p, .flow ul li p {
+    font-size: 1.40625vw;
+  }
+
+  .unionContact {
+    margin-bottom: 0;
+  }
+
+  .group {
+    margin-bottom: 10%;
+  }
+
+  .unionContact p, .group p {
+    font-size: 1.40625vw;
+  }
+  .unionContact .address, .group .address {
+    margin-bottom: 5%;
+  }
+  .unionContact .address h4, .group .address h4 {
+    font-size: 2.03125vw;
+  }
+  .unionContact .btn-more, .group .btn-more {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .blank a {
+    font-size: 1.40625vw;
+  }
+
+  .other {
+    margin-bottom: 10%;
+  }
+  .other .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .other .wrap .box {
+    width: 47.5%;
+    margin-bottom: 10%;
+  }
+  .other .wrap .box h3 {
+    font-size: 2.1875vw;
+  }
+  .other .wrap .box:last-of-type, .other .wrap .box:nth-last-of-type(2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .summary ul li h4, .flow ul li h4 {
+    font-size: 22px;
+  }
+  .summary ul li p, .flow ul li p {
+    font-size: 18px;
+  }
+
+  .unionContact p, .group p {
+    font-size: 18px;
+  }
+  .unionContact .address h4, .group .address h4 {
+    font-size: 26px;
+  }
+
+  .blank a {
+    font-size: 18px;
+  }
+
+  .other .wrap .box h3 {
+    font-size: 28px;
+  }
+}

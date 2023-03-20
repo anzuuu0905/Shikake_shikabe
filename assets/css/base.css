@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+
+html{
+	font-size: 2.6vw;
+}
+@media screen and (min-width: 767px){
+	html{
+		font-size: 62.5%;/*1rem = 10px*/
+	}
+}
+body{
+	width: 100%;
+  height: 100%;
+  font-family: 'Noto Serif JP', serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 1.8;
+  color: #211815;
+}
+@media screen and (max-width: 768px){
+	body{
+		font-size: 1.6rem;
+	}
+}
+ul,ol{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: #211815;
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,p{
+	margin: 0;
+	font-weight: normal;
+}
+input,select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	border: none;
+	border-radius: 0;
+	background: #FFF;
+}
+img{
+	width: 100%;
+	display: block;
+	-webkit-backface-visibility: hidden;
+}
+::-moz-selection{
+  background: #8EC3EB;
+}
+::selection{
+  background: #8EC3EB;
+}

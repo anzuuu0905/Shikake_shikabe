@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g id="グループ_909" data-name="グループ 909" transform="translate(-886 -1365)">
+    <g id="グループ_575" data-name="グループ 575">
+      <g id="長方形_576" data-name="長方形 576" transform="translate(888 1367)" fill="#fff" stroke="#666" stroke-width="1">
+        <rect width="12" height="12" stroke="none"/>
+        <rect x="0.5" y="0.5" width="11" height="11" fill="none"/>
+      </g>
+      <g id="長方形_577" data-name="長方形 577" transform="translate(888 1367)" fill="#666" stroke="#666" stroke-width="1">
+        <rect width="12" height="4" stroke="none"/>
+        <rect x="0.5" y="0.5" width="11" height="3" fill="none"/>
+      </g>
+    </g>
+    <g id="グループ_576" data-name="グループ 576" transform="translate(-2 -2)">
+      <g id="長方形_576-2" data-name="長方形 576" transform="translate(888 1367)" fill="#fff" stroke="#666" stroke-width="1">
+        <rect width="12" height="12" stroke="none"/>
+        <rect x="0.5" y="0.5" width="11" height="11" fill="none"/>
+      </g>
+      <g id="長方形_577-2" data-name="長方形 577" transform="translate(888 1367)" fill="#666" stroke="#666" stroke-width="1">
+        <rect width="12" height="4" stroke="none"/>
+        <rect x="0.5" y="0.5" width="11" height="3" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
