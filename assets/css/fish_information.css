@@ -64,6 +64,8 @@
 .acoBlk .toggle:checked + .title + .content {
   max-height: 600px;
   transition: all 1.0s;
+  max-height: initial;
+  overflow:initial;
 }
 .acoBlk .toggle:checked + .title::before {
   transform: rotate(-45deg) !important;

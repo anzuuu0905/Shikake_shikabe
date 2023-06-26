@@ -774,7 +774,7 @@
 .infoTable th, .infoTable td {
   border-bottom: solid 1px #707070;
   border-right: solid 1px #707070;
-  padding: .5rem 1rem;
+  padding: .5rem 0.8rem;
 }
 .infoTable td {
   text-align: right;
