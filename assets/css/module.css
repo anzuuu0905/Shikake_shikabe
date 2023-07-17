@@ -102,6 +102,10 @@
   transition: .3s;
   font-size: 5.3333333333vw;
 }
+.btn-more--white a {
+  background: rgba(255,255,255,0.3);
+}
+
 .btn-more a:before {
   content: "";
   display: block;
@@ -121,6 +125,10 @@
   border: solid 2px #F2902A;
   box-sizing: border-box;
 }
+.btn-more--white a span {
+  border: solid 2px #FFF;
+}
+
 .btn-more a span:after, .btn-more a span:before {
   content: "";
   display: block;
@@ -141,6 +149,9 @@
   opacity: 0;
   transform: translateX(-40px);
   transition: .8s ease;
+}
+.btn-more--white a span:before {
+  background: url("../img/common/arrow-black.svg") no-repeat right center;
 }
 .btn-more a:hover {
   color: #000;
@@ -1332,5 +1343,15 @@
 
   .is-flex.gutters > .is-pc12 {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #tara,
+  #hotate,
+  #konbu,
+  #info{
+    margin-top: calc((2.5% + 75px) * -1);
+    padding-top: calc(2.5% + 75px);
   }
 }

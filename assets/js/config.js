@@ -1,30 +1,48 @@
 // JavaScript Document
+if (window.innerWidth >= 768) {
+  fadeIn = document.querySelectorAll('.js-fade-in');
+  fadeIn.forEach(target => {
+    gsap.fromTo(target,
+      {
+        autoAlpha: 0,
+        x: '100%'
+      },
+      {
+        autoAlpha: 1,
+        x: '0%',
+        duration: 2,
+        scrollTrigger: { trigger: target, start: 'top 80%' }
+      }
+    )
+  })
+}
+
 (function($) {
-  
+
   /*==================================
     header
   ==================================*/
   $(function(){
     var scrollpos;
-    
+
     $('.menu-trigger').on('click',function(){
         if($(this).hasClass('active')){
           $(this).removeClass('active');
           $('nav').removeClass('open');
           $('.overlay').removeClass('open');
-          
+
           //背景固定解除
           $('body').removeClass('fixed').css({'top': 0});
           window.scrollTo( 0 , scrollpos );
-          
+
         } else {
           $(this).addClass('active');
           $('nav').addClass('open');
           $('.overlay').addClass('open');
-          
+
           //背景固定
           scrollpos = $(window).scrollTop();
-          $('body').addClass('fixed').css({'top': -scrollpos});          
+          $('body').addClass('fixed').css({'top': -scrollpos});
         }
       });
       $('.overlay').on('click',function(){
@@ -32,15 +50,15 @@
           $(this).removeClass('open');
           $('.menu-trigger').removeClass('active');
           $('nav').removeClass('open');
-          
+
           //背景固定解除
           $('body').removeClass('fixed').css({'top': 0});
           window.scrollTo( 0 , scrollpos );
         }
-    }); 
-  }); 
-  
- $(function(){  
+    });
+  });
+
+ $(function(){
     var startPos = 0;
     var winScrollTop = 0;
     if (window.matchMedia('(max-width: 767px)').matches) {
@@ -48,7 +66,7 @@
     } else{
       var Header = $('#header');
     }
-   
+
     $(window).on('scroll',function(){
       winScrollTop = $(this).scrollTop();
       if (winScrollTop >= startPos && winScrollTop > 100) { // ここにコードを追加
@@ -59,7 +77,7 @@
       startPos = winScrollTop;
     });
  });
-  
+
 //  $(function(){
 //    //メニューのページ上部からの距離を取得
 //    var menu_offset = $('header').offset().top;
@@ -73,15 +91,15 @@
 //          $('header').addClass('fixed');
 //        } else {
 //          //逆の場合にクラス「fixed」を解除
-//          $('header').removeClass('fixed'); 
+//          $('header').removeClass('fixed');
 //          if($('.menu-trigger').hasClass('active')){
 //             $('header').addClass('fixed');
 //          }
 //        }
 //      }
 //    )
-//  });  
-  
+//  });
+
   $(document).ready(function () {
     // 1.関数の定義
     function setHeight() {
@@ -118,12 +136,12 @@
 			mql.addListener(checkBreakPoint);
 			checkBreakPoint(mql);
 		});
-  
+
   /*==================================
     pagetop
-  ==================================*/  
+  ==================================*/
     $(function() {
-        var topBtn = $('#pagetop');    
+        var topBtn = $('#pagetop');
         topBtn.hide();
         //スクロールが200に達したらボタン表示
         $(window).scroll(function () {
@@ -142,13 +160,13 @@
             },   500);
             return false;
         });
-    });  
+    });
   /*==================================
     matchHeight
-  ==================================*/  
+  ==================================*/
   $(function() {
     $('.postList .ttl').matchHeight();
   });
-  
-  
+
+
 })(jQuery);

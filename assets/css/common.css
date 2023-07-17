@@ -185,6 +185,11 @@ header {
   line-height: 2.0;
   position: relative;
 }
+
+.gnavWrap nav .gnav > li > a {
+  color: #FDF4CD;
+}
+
 .gnavWrap nav .gnav li a:after {
   content: "";
   display: block;
@@ -203,6 +208,12 @@ header {
   right: 0;
   margin: auto;
 }
+
+.gnavWrap nav .gnav li a:after{
+    border-top: 1px solid #FDF4CD;
+  border-right: 1px solid #FDF4CD;
+}
+
 .gnavWrap nav .gnav li .child li {
   font-size: 4.2666666667vw;
   margin-bottom: 0;
